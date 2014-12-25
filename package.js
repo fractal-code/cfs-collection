@@ -11,7 +11,7 @@ Package.onUse(function(api) {
   api.use([
     // CFS
     'gliese:cfs-base@0.0.28',
-    'gliese:tempstore@0.1.4',
+    'gliese:cfs-tempstore@0.1.4',
     // Core
     'deps',
     'check',
