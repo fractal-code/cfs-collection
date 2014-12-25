@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'cfs:collection',
-  version: '0.5.3',
-  summary: 'CollectionFS, FS.Collection object',
-  git: 'https://github.com/CollectionFS/Meteor-cfs-collection.git'
+  name: 'gliese: cfs-collection',
+  version: '0.5.4',
+  summary: 'Gliese flavour of CollectionFS, FS.Collection object (INTERNAL USE ONLY)',
+  git: 'https://github.com/gliesesoftware/cfs-collection.git'
 });
 
 Package.onUse(function(api) {
@@ -10,8 +10,8 @@ Package.onUse(function(api) {
 
   api.use([
     // CFS
-    'cfs:base-package@0.0.27',
-    'cfs:tempstore@0.1.3',
+    'gliese:cfs-base@0.0.28',
+    'gliese:tempstore@0.1.4',
     // Core
     'deps',
     'check',
@@ -36,7 +36,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function (api) {
-  api.use(['cfs:standard-packages', 'cfs:gridfs', 'tinytest', 'underscore', 'test-helpers']);
+  api.use(['gliese:cfs-core', 'gliese:cfs-gridfs', 'tinytest', 'underscore', 'test-helpers']);
 
   api.addFiles('tests/server-tests.js', 'server');
   api.addFiles('tests/client-tests.js', 'client');
