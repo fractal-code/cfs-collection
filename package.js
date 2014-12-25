@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'gliese: cfs-collection',
+  name: 'gliese:cfs-collection',
   version: '0.5.4',
   summary: 'Gliese flavour of CollectionFS, FS.Collection object (INTERNAL USE ONLY)',
   git: 'https://github.com/gliesesoftware/cfs-collection.git'
